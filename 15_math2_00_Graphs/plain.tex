@@ -1,0 +1,53 @@
+\documentclass[a4paper]{oblivoir}
+\usepackage{amsmath,amssymb,kotex,kswrapfig,mdframed,tabto,paralist,graphicx}
+\usepackage{fapapersize}
+\usefapapersize{210mm,297mm,10mm,*,10mm,*}
+
+%%% Counters
+\newcounter{num}
+
+%%% Commands
+\newcommand\defi[1]
+{\bigskip\par\noindent\stepcounter{num} \textbf{정의 \thenum) #1}\par\noindent}
+\newcommand\theo[1]
+{\bigskip\par\noindent\stepcounter{num} \textbf{정리 \thenum) #1}\par\noindent}
+\newcommand\exam[1]
+{\bigskip\par\noindent\stepcounter{num} \textbf{예시 \thenum) #1}\par\noindent}
+\newcommand\prob[1]
+{\bigskip\par\noindent\stepcounter{num} \textbf{문제 \thenum) #1}\par\noindent}
+
+\newcommand\pb[1]{\ensuremath{\fbox{\phantom{#1}}}}
+
+\newcommand\ba{\ensuremath{\:|\:}}
+
+\newcommand\procedure[1]{\begin{mdframed}\vspace{#1\textheight}\end{mdframed}\bigskip}
+
+\newcommand\an[1]{\bigskip\par\noindent\textbf{문제 #1)}\par\noindent}
+
+%%% Meta Commands
+\let\oldsection\section
+\renewcommand\section{\clearpage\oldsection}
+
+\let\emph\textsf
+
+\begin{document}
+\begin{minipage}{0.45\textwidth}\centering
+\par\bigskip\includegraphics[width=0.9\textwidth]{55}
+\end{minipage}
+\begin{minipage}{0.45\textwidth}\centering
+\par\bigskip\includegraphics[width=0.9\textwidth]{55}
+\end{minipage}\bigskip\bigskip\par
+\begin{minipage}{0.45\textwidth}\centering
+\par\bigskip\includegraphics[width=0.9\textwidth]{55}
+\end{minipage}
+\begin{minipage}{0.45\textwidth}\centering
+\par\bigskip\includegraphics[width=0.9\textwidth]{55}
+\end{minipage}\bigskip\bigskip\par
+\begin{minipage}{0.45\textwidth}\centering
+\par\bigskip\includegraphics[width=0.9\textwidth]{55}
+\end{minipage}
+\begin{minipage}{0.45\textwidth}\centering
+\par\bigskip\includegraphics[width=0.9\textwidth]{55}
+\end{minipage}\bigskip\bigskip\par
+
+\end{document}
